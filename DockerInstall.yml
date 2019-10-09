@@ -1,0 +1,5 @@
+---
+- hosts: newhost
+  tasks:
+  - name: Fetch docker.
+    shell: export https_proxy=http://{{ proxyip }}:{{ proxyport}} && cd /usr/local/src && wget -qO- https://get.docker.com/ -e use_proxy=yes -e https_proxy={{ proxyip }}:{{ proxyport }} | sh

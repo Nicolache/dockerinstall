@@ -1,0 +1,9 @@
+[newhost]
+IP.TO.INSTALL.DOCKER
+
+[allhosts:children]
+newhost
+
+[allhosts:vars]
+proxyip=PR.O.XY.IP
+proxyport=PROXYPORT
